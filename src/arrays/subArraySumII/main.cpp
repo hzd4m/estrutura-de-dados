@@ -21,13 +21,13 @@ vector<int> criarArray(int n){
     return v;
 } 
 
-void mostrarArray(vector<int> v){
+void mostrarArray(vector<int>& v){
     for(auto i : v){
         cout << i << " ";
     }
 }
 
-int prefixSum(vector<int> v, int n ){
+int prefixSum(vector<int>& v, int n ){
     vector<int> prefixSum(v.size()); 
     prefixSum[0] = v[0];
     for(int i = 1; i < v.size(); i++){
