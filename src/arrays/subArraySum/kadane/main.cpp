@@ -4,7 +4,7 @@
 using namespace std; 
 
 int kadane(vector<int>& arr, int n){
-    int maior = 0;
+    int maior = arr[0];
     int soma_atual = 0;
     for(int i = 0; i < n; i++){
         soma_atual = soma_atual + arr[i];
